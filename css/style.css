@@ -1,0 +1,240 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+/*--------------------global--------------------*/
+
+body{
+    background-color: rgb(245, 245, 245);
+}
+
+h1, h2, h3{
+    color:#54595F;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+p{
+    color: #54595F;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    line-height: 30px;
+}
+
+/*--------------------inicio--------------------*/
+
+/*---------------header---------------*/
+
+header{
+    margin-bottom: 50px;
+    width: 100%;
+    padding-top: 20px;
+    background-color: #dcdcdc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logotipo_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.logo{
+    width: 140px;
+}
+
+/*---------------links_del_menú---------------*/
+
+nav{
+    height: auto;
+    margin: 10px 0;
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+} 
+
+li{
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: #54595F;
+}
+
+ul li a:hover{
+    color: #ffc4ba
+}
+
+
+/*---------------elegirnos---------------*/
+
+.elegirnos{
+    margin: 0 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo_elegirnos{
+    margin-bottom: 30px;
+}
+
+.servicios_cajas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.servicios_caja1, .servicios_caja2, .servicios_caja3{
+    text-align: center;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icono_servicios{
+    width: 50px;
+}
+
+.texto_elegirnos{
+    margin-top: 20px;
+}
+
+/*---------------quienes_somos---------------*/
+
+.quienes_somos{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.texto_quienes_somos{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo_quienes_somos{
+    margin-bottom: 30px;
+}
+
+/*---------------organicemos_un_café---------------*/
+
+.organicemos_un_cafe{
+    display: flex;
+    justify-content: center;
+}
+
+.texto_cafe_virtual{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.titulo_cafe_virtual{
+    margin-bottom: 30px;
+}
+
+/*---------------Contacto---------------*/
+
+.contacto_principal{
+    padding: 50px;
+    text-align: center;
+    margin: 0 50px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*---------------footer---------------*/
+
+footer{
+    background-color: gray;
+    height: 40vh;
+}
+
+/*--------------------presupuesto--------------------*/
+
+.formulario_presupuesto{
+    height: 500px;
+    padding: 5%;
+    margin: 0 50px 50px 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-evenly;
+}
+
+input{
+    width: 100px;
+    transition: all 2s;
+}
+
+/*--------------------servicios--------------------
+
+a definir seccion...
+
+/*--------------------equipo--------------------*/
+
+.miembros{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.texto_miembros{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo_miembros{
+    margin-bottom: 30px;
+}
+
+/*--------------------contacto--------------------*/
+
+.header_contacto{
+    margin: 0;
+}
+
+iframe{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.formulario_contacto{
+    margin: 5%;
+    text-align: center;
+    line-height: 25px;
+}
+
+
+
+label{
+    color:#54595F;
+    font-family: 'Roboto Slab', serif;;
+}
