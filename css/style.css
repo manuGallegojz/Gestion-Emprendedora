@@ -6,30 +6,15 @@ body{
     background-color: rgb(245, 245, 245);
 }
 
-h1, h2, h3{
-    color:#54595F;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700;
-    text-align: center;
-}
-
-p{
-    color: #54595F;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    text-align: center;
-    line-height: 30px;
-}
-
 /*--------------------inicio--------------------*/
 
 /*---------------header---------------*/
 
 header{
-    margin-bottom: 50px;
     width: 100%;
-    padding-top: 20px;
-    background-color: #dcdcdc;
+    background-image: url(../imagenes/header-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -42,7 +27,8 @@ header{
 }
 
 .logo{
-    width: 140px;
+    width: 180px;
+    margin: 25px 0;
 }
 
 /*---------------links_del_menú---------------*/
@@ -53,32 +39,26 @@ nav{
 
 }
 
-ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-} 
-
 li{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
     display: inline-block;
+    font-weight: lighter;
 }
 
 a{
     text-decoration: none;
-    color: #54595F;
+    color: #75ccbb;
 }
 
 ul li a:hover{
-    color: #ffc4ba
+    color: #ffc4ba;
 }
 
 
 /*---------------elegirnos---------------*/
 
 .elegirnos{
-    margin: 0 50px 50px 50px;
+    margin: 50px 50px 50px 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,17 +68,9 @@ ul li a:hover{
     margin-bottom: 30px;
 }
 
-.servicios_cajas{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
 .servicios_caja1, .servicios_caja2, .servicios_caja3{
     text-align: center;
-    padding: 0 30px;
-    display: flex;
-    flex-direction: column;
+    padding: 30px;
     justify-content: center;
 }
 
@@ -164,15 +136,32 @@ ul li a:hover{
 
 footer{
     background-color: gray;
-    height: 40vh;
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
+.footer1, .footer2, .footer3{
+    margin: 0 20px;
+}
+
+.footer_titulo{
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer_texto{
+    color: white;
+}
 /*--------------------presupuesto--------------------*/
 
 .formulario_presupuesto{
     height: 500px;
     padding: 5%;
-    margin: 0 50px 50px 50px;
+    margin: 50px 50px 50px 50px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -193,7 +182,7 @@ a definir seccion...
 .miembros{
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 
 .texto_miembros{
@@ -230,11 +219,4 @@ iframe{
     margin: 5%;
     text-align: center;
     line-height: 25px;
-}
-
-
-
-label{
-    color:#54595F;
-    font-family: 'Roboto Slab', serif;;
 }
