@@ -9,174 +9,252 @@
         <!-----css----->
 
         <link rel="stylesheet" href="../css/style.css">
-        
+                
         <!-----fuentes----->
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <!----bootstrap---->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    
 
     </head>
     <body>
         
+        <!----header---->
+
         <header>
 
+            <!----logotipo---->
+
             <div class="logotipo_header">
-                <img class="logo" src="../imagenes/logo_para_web-02.png">
+                <a href="../index.html"><img class="logo" src="../imagenes/logo_para_web-02.png"></a>
             </div>
+
+            <!----links_de_navegacion_con_bootstrap---->
 
             <nav>   
 
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="presupuesto.html">Presupuesto</a></li>
-                    <li><a href="nuestro_equipo.html">Nuestro Equipo</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nuestro_equipo.html">Nuestro Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
 
             </nav>
 
         </header>
 
-            <form action="presupuesto.html" class="formulario_presupuesto">
 
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre">
+        <!----formulario---->
 
-            <br>
-            <br>
 
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" id="apellido">
+            <form class="container mt-5" action="presupuesto.html">
 
-            <br>
-            <br>
+            <!----nombre_y_apellido---->
 
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email">
-            
-            <br>
-            <br>
+            <div class="row">
 
-                <label for="whatsapp">Whatsapp:</label>
-                <input type="text" name="whatsapp" id="whatsapp">
-            
-            <br>
-            <br>
+                <!----nombre---->
 
-                <label for="instagram">Instagram / Web Comercial:</label>
-                <input type="text" name="instagram" id="instagram">
-            
-            <br>
-            <br>
+                <div class="form-group col-lg-6 col-sm-12 col-12">
 
-                <label for="actividad">¿Que actividad/es haces?</label>
-            <br>
-                <textarea name="actividad" id="actividad"></textarea>
-            
-            <br>
-            <br>
+                    <label for="nombre">Nombre:</label>
+                    <input class="form-control" type="text" name="nombre" id="nombre">
 
-                <label for="localidad">¿De dónde sos? (provincia y localidad)</label>
-                <input type="text" name="localidad" id="localidad">
-            
-            <br>
-            <br>
+                </div>
 
-                <label for="negocio">¿Tenés negocio y/o vendés por internet?</label>
-                <input type="text" name="negocio" id="negocio">
+                <!----apellido---->
 
-            <br>
-            <br>
+                <div class="form-group col-lg-6 col-sm-12 col-12">
 
-                <label for="estadocivil">Estado Civil:</label>
-            
-                <select name="sobre_que_necesitas_presupuesto">
+                    <label for="apellido">Apellido:</label>
+                    <input class="form-control" type="text" name="apellido" id="apellido">
+
+                </div>
+
+            </div>
+
+            <!----email_y_whatsapp---->
+
+            <div class="row">
+
+                <!----email---->
+
+                <div class="form-group col-lg-6 col-sm-12 col-12">
+
+                    <label for="email">Email:</label>
+                    <input class="form-control" type="text" name="email" id="email">
+
+                </div>
+
+                <!----whatsapp---->
+
+                <div class="form-group col-lg-6 col-sm-12 col-12">
+
+                    <label for="whatsapp">Whatsapp:</label>
+                    <input class="form-control" type="text" name="whatsapp" id="whatsapp">
                 
-                    <option name= "A_inscripción">Inscripción</option>
-                    
-                    <option name= "A_abono_mensual">Abono Mensual</option>
-                    
-                    <option name= "A_inscripción_abono_mensual">Inscripción + Abono Mensual</option>
-                    
-                    <option name= "A_deudas">Regularización de Deudas</option>
-                    
-                    <option name= "A_costos">Planificación de Costos</option>
-                    
-                    <option name= "A_otros">Otros(Contanos al Final)</option>
+                </div>
 
-                </select>
+            </div>   
 
-            <br>
-            <br>
+                <!----instagram---->
 
-                <select name="donde_vas_a_trabajar">
+                    <label for="instagram">Instagram / Web Comercial:</label>
+                    <input class="form-control" type="text" name="instagram" id="instagram">
+
+            <!----provincia/localidad_y_negocio---->
+
+            <div class="row">
+
+                <!----provincia/localidad---->
+
+                <div class="form-group col-lg-6 col-sm-12 col-12">
+
+                    <label for="localidad">¿De dónde sos? (provincia y localidad)</label>
+                    <input class="form-control" type="text" name="localidad" id="localidad">
+
+                </div>    
+
+                <!----negocio---->
+
+                <div class="form-group col-lg-6 col-sm-12 col-12">
+
+                    <label for="negocio">¿Tenés negocio y/o vendés por internet?</label>
+                    <input class="form-control" type="text" name="negocio" id="negocio">
+
+                </div>
+
+            </div>
+
+            <!----actividad_y_listas_despegables---->
+
+            <div class="row">
+
+                <!----actividad---->
+                
+            <div class="form-group col-lg-6 col-sm-12 col-12">
+
+                    <label for="actividad">¿Que actividad/es haces?</label>
+                    <textarea class="form-control h-100" name="actividad" id="actividad"></textarea>
+
+            </div>
+
+            <!----listas_despegables---->
+
+            <div class="form-group col-lg-6 col-sm-12 col-12 mt-4">
+
+                    <label for="label_sobre_que_necesitas_presupuesto">¿Sobre qué necesitas presupuesto?</label>
+                    <select class="form-select" name="sobre_que_necesitas_presupuesto" id="label_sobre_que_necesitas_presupuesto">
                     
-                    <option name= "B_una">Solo en la jurisdicción dónde vivo</option>
-                    
-                    <option name= "B_muchas">En mas de una jurisdicción</option>
-                    
-                </select>
+                        <option name= "A_inscripción">Inscripción</option>
+                        
+                        <option name= "A_abono_mensual">Abono Mensual</option>
+                        
+                        <option name= "A_inscripción_abono_mensual">Inscripción + Abono Mensual</option>
+                        
+                        <option name= "A_deudas">Regularización de Deudas</option>
+                        
+                        <option name= "A_costos">Planificación de Costos</option>
+                        
+                        <option name= "A_otros">Otros(Contanos al Final)</option>
 
-            <br>
-            <br>
+                    </select>
 
-                <select name="vendes_al_exterior">
-                    
-                    <option name= "C_si_exterior">Si vendo al exterior</option>
-                    
-                    <option name= "C_no_exterior">No vendo al exterior</option>
-                    
-                </select>
+                    <label for="label_donde_vas_a_trabajar">¿Dónde vas a trabajar?</label>
+                    <select class="form-select" name="donde_vas_a_trabajar" id="label_donde_vas_a_trabajar">
+                        
+                        <option name= "B_una">Solo en la jurisdicción dónde vivo</option>
+                        
+                        <option name= "B_muchas">En mas de una jurisdicción</option>
+                        
+                    </select>
 
-            <br>
-            <br>
+                    <label for="label_vendes_al_exterior">¿Vendés al exterior?</label>
+                    <select class="form-select" name="vendes_al_exterior" id="label_vendes_al_exterior">
+                        
+                        <option name= "C_si_exterior">Si vendo al exterior</option>
+                        
+                        <option name= "C_no_exterior">No vendo al exterior</option>
+                        
+                    </select>
 
-                <select name="trabajas_bajo_relacion_de_dependencia">
-                    
-                    <option name= "D_si_dependencia">Sí, trabajo bajo relación de dependencia</option>
-                    
-                    <option name= "D_no_dependencia">No, no trabajo bajo relación de dependencia</option>
-                    
-                </select>
+                    <label for="label_trabajas_bajo_relacion_de_dependencia">¿Trabajás bajo relación de dependencia?</label>
+                    <select class="form-select" name="trabajas_bajo_relacion_de_dependencia" id="label_trabajas_bajo_relacion_de_dependencia">
+                        
+                        <option name= "D_si_dependencia">Sí, trabajo bajo relación de dependencia</option>
+                        
+                        <option name= "D_no_dependencia">No, no trabajo bajo relación de dependencia</option>
+                        
+                    </select>
 
-            <br>
-            <br>
+                    <label for="label_vendés_algún_producto_por_arriba_de_$39.000">¿Vendés algún producto por arriba de $ 39.000?</label>
+                    <select class="form-select" name="vendés_algún_producto_por_arriba_de_$39.000" id="label_vendés_algún_producto_por_arriba_de_$39.000">
+                        
+                        <option name= "E_si_39000">Sí, vendo productos por mas de $ 39.000</option>
+                        
+                        <option name= "E_no_39000">No, no productos por mas de $ 39.000</option>
+                        
+                    </select>
 
-                <select name="vendés_algún_producto_por_arriba_de_$39.000">
-                    
-                    <option name= "E_si_39000">Sí, vendo productos por mas de $ 39.000</option>
-                    
-                    <option name= "E_no_39000">No, no productos por mas de $ 39.000</option>
-                    
-                </select>
+            </div>
+                
+            </div>
+                
+                <!----expectativas---->
 
-            <br>
-            <br>
+                    <label class="mt-md-4 mt-sm-4" for="expectativas">¿Cuál es tu expectativa al contratar un servicio contable/impositivo?</label>
+                    <textarea class="form-control" name="esxpectativas" id="expectativas"></textarea>
 
-                <label for="expectativas">¿Cuál es tu expectativa al contratar un servicio contable/impositivo?</label>
-            <br>
-                <textarea name="esxpectativas" id="expectativas"></textarea>
-            
-            <br>
-            <br>
+                <!----comentarios---->
 
-                <label for="comentarios">Comentarios adicionales</label>
-            <br>
-                <textarea name="comentarios" id="comentarios"></textarea>
+                    <label for="comentarios">Comentarios adicionales</label>
+                    <textarea class="form-control" name="comentarios" id="comentarios"></textarea>
 
-            <br>
-            <br>
+                <!----enviar---->
 
-                <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" class="btn btn-primary mt-3 mb-3">
 
         </form>
 
-        <footer>
+        <!----footer---->
 
-            <!-----por_definir----->
+        <footer class="container-fluid mt-5">
+
+            <div class="row">
+
+            <div class="col-lg-4 col-sm-12 col-12">
+
+                <h2 class="footer_titulo">Lorem ipsum</h2>
+                <p class="footer_texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas hic ducimus aliquam nobis vero repellat corrupti ipsa molestiae, quaerat eaque assumenda a fugit corporis, minima recusandae excepturi, voluptates neque? Vitae?</p>
+
+            </div>
+
+            <div class="col-lg-4 col-sm-12 col-12">
+
+                <h2 class="footer_titulo">Lorem ipsum</h2>
+                <p class="footer_texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas hic ducimus aliquam nobis vero repellat corrupti ipsa molestiae, quaerat eaque assumenda a fugit corporis, minima recusandae excepturi, voluptates neque? Vitae?</p>
+
+            </div>
+
+            <div class="col-lg-4 col-sm-12 col-12">
+
+                <h2 class="footer_titulo">Lorem ipsum</h2>
+                <p class="footer_texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas hic ducimus aliquam nobis vero repellat corrupti ipsa molestiae, quaerat eaque assumenda a fugit corporis, minima recusandae excepturi, voluptates neque? Vitae?</p>
+
+            </div>
+
+        </div>
 
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 
     </body>
 </html>

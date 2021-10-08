@@ -9,55 +9,58 @@
         <!-----css----->
 
         <link rel="stylesheet" href="../css/style.css">
-        
+                
         <!-----fuentes----->
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <!----bootstrap---->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    
 
     </head>
     <body>
         
+        <!----header---->
+
         <header>
 
+            <!----logotipo---->
+
             <div class="logotipo_header">
-                <img class="logo" src="../imagenes/logo_para_web-02.png">
+                <a href="../index.html"><img class="logo" src="../imagenes/logo_para_web-02.png"></a>
             </div>
 
+            <!----links_de_navegacion_con_bootstrap---->
 
             <nav>   
 
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="presupuesto.html">Presupuesto</a></li>
-                    <li><a href="nuestro_equipo.html">Nuestro Equipo</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nuestro_equipo.html">Nuestro Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
 
             </nav>
 
         </header>
 
+        <!----main---->
+
         <main>
 
-            <section class="miembros">
+            <!----primer_miembro---->
 
-                <div class="texto_miembros">
+            <section class="container p-5">
 
-                <h1 class="titulo_miembros">Camila Gallego</h1>
+                <div class="col-12">
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum magni similique eaque sit beatae aut natus saepe, id deserunt officia aliquam cumque repellat accusamus nesciunt fugit sint, odit architecto? Vitae.</p>
-
-                </div>
-
-            </section>
-
-            <section class="miembros">
-
-                <div class="texto_miembros">
-
-                <h1 class="titulo_miembros">Yanina Bruschi</h1>
+                <h1>Camila Gallego</h1>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum magni similique eaque sit beatae aut natus saepe, id deserunt officia aliquam cumque repellat accusamus nesciunt fugit sint, odit architecto? Vitae.</p>
 
@@ -65,11 +68,27 @@
 
             </section>
 
-            <section class="miembros">
+            <!----segundo_miembro---->
 
-                <div class="texto_miembros">
+            <section class="container p-5">
 
-                <h1 class="titulo_miembros">Romina Goldwaser</h1>
+                <div class="col-12">
+
+                <h1>Yanina Bruschi</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum magni similique eaque sit beatae aut natus saepe, id deserunt officia aliquam cumque repellat accusamus nesciunt fugit sint, odit architecto? Vitae.</p>
+
+                </div>
+
+            </section>
+
+            <!----tercer_miembro---->
+
+            <section class="container p-5">
+
+                <div class="col-12">
+
+                <h1>Romina Goldwaser</h1>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum magni similique eaque sit beatae aut natus saepe, id deserunt officia aliquam cumque repellat accusamus nesciunt fugit sint, odit architecto? Vitae.</p>
             
@@ -79,11 +98,38 @@
 
         </main>
 
-        <footer>
+        <!----footer---->
 
-            <!-----por_definir----->
+        <footer class="container-fluid mt-5">
+
+            <div class="row">
+
+            <div class="col-lg-4 col-sm-12 col-12">
+
+                <h2 class="footer_titulo">Lorem ipsum</h2>
+                <p class="footer_texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas hic ducimus aliquam nobis vero repellat corrupti ipsa molestiae, quaerat eaque assumenda a fugit corporis, minima recusandae excepturi, voluptates neque? Vitae?</p>
+
+            </div>
+
+            <div class="col-lg-4 col-sm-12 col-12">
+
+                <h2 class="footer_titulo">Lorem ipsum</h2>
+                <p class="footer_texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas hic ducimus aliquam nobis vero repellat corrupti ipsa molestiae, quaerat eaque assumenda a fugit corporis, minima recusandae excepturi, voluptates neque? Vitae?</p>
+
+            </div>
+
+            <div class="col-lg-4 col-sm-12 col-12">
+
+                <h2 class="footer_titulo">Lorem ipsum</h2>
+                <p class="footer_texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas hic ducimus aliquam nobis vero repellat corrupti ipsa molestiae, quaerat eaque assumenda a fugit corporis, minima recusandae excepturi, voluptates neque? Vitae?</p>
+
+            </div>
+
+        </div>
 
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 
     </body>
 </html>
