@@ -4,8 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>desafio_13</title>
+        <title>desafio_14</title>
         
+        <!----bootstrap---->
+
+        <link rel="stylesheet" href="librerias/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="librerias/bootstrap/bootstrap-theme.min.cs">
+    
         <!-----css----->
 
         <link rel="stylesheet" href="css/style.css">
@@ -16,10 +21,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-        <!----bootstrap---->
+        <!-----favicon----->
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-    
+        <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+
     </head>
     <body>
         
@@ -27,23 +32,35 @@
 
         <header>
 
-            <!----logotipo---->
+            <nav class="contnavbar navbar-expand-sm flex-md-row"> 
 
-            <div class="logotipo_header">
-                <a href="index.html"><img class="logo" src="imagenes/logo_para_web-02.png"></a>
-            </div>
+                <div class="container-fluid text-lg-center">
 
-            <!----links_de_navegacion_con_bootstrap---->
+                    <!----logotipo---->
 
-            <nav class="container">   
+                        <a class="navbar-brand" href="index.html"><img class="logo" src="imagenes/logo_para_web-02.png"></a>
 
-                <ul class="nav justify-content-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/presupuesto.html">Presupuesto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/nuestro_equipo.html">Nuestro Equipo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
-                </ul>
+                    <!----links_de_navegacion_con_bootstrap---->
+
+                            <button class="navbar-toggler btn btn-primary float-end" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse justify-content-lg-center" id="collapsibleNavbar">
+
+                                <ul class="nav serif">
+
+                                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="pages/presupuesto.html">Presupuesto</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="pages/nuestro_equipo.html">Nuestro Equipo</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="pages/servicios.html">Servicios</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+
+                                </ul>
+
+                            </div>
+
+                </div>
 
             </nav>
 
@@ -55,23 +72,25 @@
 
             <!----servicios_con_bootstrap---->
 
-            <section class="container mt-5">
+            <section class="container mt-5 mb-5">
 
-                <h2 class="text-center">¿Por qué elegir nuestros Servicios?</h2>
+                <h2 class="text-center serif">¿Por qué elegir nuestros Servicios?</h2>
 
                     <div class="row text-center mt-5">
 
                         <div class="col-md-4 col-sm-6">
 
-                            <div class="contenedor_icono_servicios">
-                            <img class="icono_servicios" src="imagenes/customer.png">
+                            <div>
+
+                            <img class="icono" src="imagenes/customer.png">
+
                             </div>
 
                             <div class="mt-3">
 
-                            <h3>Atención personalizada</h3>
+                            <h5 class="serif">Atención personalizada</h5>
 
-                                <p>Una comunicación humana y amable, basada en la confianza y focalizada en sus necesidades.</p>
+                                <p class="sanserif">Una comunicación humana y amable, basada en la confianza y focalizada en sus necesidades.</p>
 
                             </div>
 
@@ -80,14 +99,16 @@
                         <div class="col-md-4 col-sm-6">
 
                             <div class="contenedor_icono_servicios">
-                            <img class="icono_servicios" src="imagenes/money.png">
+
+                            <img class="icono" src="imagenes/money.png">
+
                             </div>
 
                             <div class="mt-3">
 
-                            <h3>Honorarios razonables</h3>
+                            <h5 class="serif">Honorarios razonables</h5>
 
-                                <p>Buscamos que el precio de nuestros servicios se adecúe a sus posibilidades.</p>
+                                <p class="sanserif">Buscamos que el precio de nuestros servicios se adecúe a sus posibilidades.</p>
 
                             </div>
 
@@ -96,14 +117,16 @@
                         <div class="col-md-4 col-sm-6">
 
                             <div class="contenedor_icono_servicios">
-                            <img class="icono_servicios" src="imagenes/quality.png">
+
+                            <img class="icono" src="imagenes/quality.png">
+
                             </div>
 
                             <div class="mt-3">
 
-                            <h3>Excelente calidad</h3>
+                            <h5 class="serif">Excelente calidad</h5>
 
-                                <p>Nuestro compromiso y responsabilidad con sus tareas producen un trabajo prolijo y eficiente.</p>
+                                <p class="sanserif">Nuestro compromiso y responsabilidad con sus tareas producen un trabajo prolijo y eficiente.</p>
 
                             </div>
 
@@ -117,40 +140,41 @@
 
             <!----quienes_somos_con_bootstrap---->
 
-            <section class="container p-5 my-5 border">
+            <section class="container_quienes_somos text-center p-5">
 
-                <div class="row">
+                <div class="texto_quienes_somos text-white">
 
-                <div id="carouselExampleControls" class="carousel slide col-lg-6" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                        <img src="imagenes/carrusel1.jpg" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                        <img src="imagenes/carrusel2.jpg" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item ">
-                        <img src="imagenes/carrusel3.jpg" class="d-block w-100">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                    </div>
+                    <h2 class="mb-4 serif">¿Quienes Somos?</h2>
 
-                    <div class="col-lg-6 text-center text-lg-start mt-5 mt-lg-0">
-
-                    <h2>¿Quienes Somos?</h2>
-
-                        <p>Nos conocimos en la sede de Paternal de la Facultad de Ciencias Económicas de la Universidad de Buenos Aires unos cuantos años atrás. Transitamos la profesión juntas pero laboralmente nos especializamos en caminos distintos, lo cual nos permite abarcar conocimientos variados del mercado.
+                        <p class="sanserif">Nos conocimos en la sede de Paternal de la Facultad de Ciencias Económicas de la Universidad de Buenos Aires unos cuantos años atrás. Transitamos la profesión juntas pero laboralmente nos especializamos en caminos distintos, lo cual nos permite abarcar conocimientos variados del mercado.
                     Tiempo después, pudimos unir lo mejor de nosotras teniendo como principal objetivo ser el soporte y guía de trabajadores autónomos, negocios en formación y sociedades. Creemos que la única forma de avanzar se logra, no solo consiguiendo nuestras metas, sino trabajando todos a la par de forma ordenada, humana, llena de motivación y ansias de crecimiento.</p>
 
-                    </div>
+                </div>
+
+            </section>
+
+            <!----links_de_interes---->
+
+            <section class="containter-fluid text-center">
+
+                <h2 class="mb-5 serif">Links de Interés</h2>
+
+                <div class="row ps-5 pe-5">
+
+                        <div class="col-sm-6 col-md-4 col-lg-3 item mb-5"><a href="https://www.afip.gob.ar/sitio/externos/default.asp"><img class="img-fluid" src="imagenes/logos/client-img-1.png"></a></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item mb-5"><a href="https://www.anses.gob.ar"><img class="img-fluid" src="imagenes/logos/client-img-3.png"></a></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item mb-5"><a href="https://www.agip.gob.ar"><img class="img-fluid" src="imagenes/logos/client-img-2.png"></a></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item mb-5"><a href="https://web.arba.gov.ar"><img class="img-fluid" src="imagenes/logos/client-img-4.png"></a></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item mb-5"><a href="https://www.argentina.gob.ar/justicia/igj"><img class="img-fluid" src="imagenes/logos/client-img-5.png"></a></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item mb-5"><a href="https://www.argentina.gob.ar/justicia/igj"><img class="img-fluid" src="imagenes/logos/client-img-6.png"></a></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item mb-5"><a href="https://www.argentina.gob.ar/sssalud"><img class="img-fluid" src="imagenes/logos/client-img-7.png"></a></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item mb-5"><a href="https://www.argentina.gob.ar/srt"><img class="img-fluid" src="imagenes/logos/client-img-8.png"></a></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item mb-5"><a href="https://www.indec.gob.ar"><img class="img-fluid" src="imagenes/logos/client-img-9.png"></a></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item mb-5"><a href="http://www.bcra.gov.ar"><img class="img-fluid" src="imagenes/logos/client-img-10.png"></a></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item mb-5"><a href="https://www.argentina.gob.ar/economia"><img class="img-fluid" src="imagenes/logos/client-img-11.png"></a></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item mb-5"><a href="https://www.consejo.org.ar"><img class="img-fluid" src="imagenes/logos/client-img-12.png"></a></div>
+                        <div class="col-sm-6 col-md-6s col-lg-6 item mb-5"><a href="https://www.argentina.gob.ar/trabajo"><img class="img-fluid" src="imagenes/logos/client-img-13.png"></a></div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 item mb-5"><a href="https://www.argentina.gob.ar/produccion/exportar"><img class="img-fluid" src="imagenes/logos/client-img-14.png"></a></div>
 
                 </div>
 
@@ -158,89 +182,100 @@
 
             <!----cafe_virtual_con_bootstrap---->
 
-            <section class="container p-5 my-5 border text-center">
+            <section class="container_organicemos_un_cafe text-center p-5">
 
-            <div class="row">
+                <div class="texto_cafe_virtual text-white">
 
-                <button class="btn btn-primary col-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsecafe" aria-expanded="false" aria-controls="collapsecafe">Organicemos un Café Virtual</button>
-                
-                <div class="collapse col-lg-9" id="collapsecafe"> 
+                <h2 class="mb-4 serif">Organicemos un Café Virtual</h2>
 
-                    <div class="card card-body text-lg-start mt-5 mt-lg-0"> Te invitamos a una reunión virtual y, cuando toda la situación vuelva a la normalidad, un café en nuestras oficinas ubicadas en Villa Luro y Flores, para que nos cuentes sobre tus necesidades y podamos trabajar en conjunto para obtener un plan de acción acorde a ellas. </div>
+                    <p class="sanserif">Te invitamos a una reunión virtual y, cuando toda la situación vuelva a la normalidad, un café en nuestras oficinas ubicadas en Villa Luro y Flores, para que nos cuentes sobre tus necesidades y podamos trabajar en conjunto para obtener un plan de acción acorde a ellas.</p>
 
                 </div>
-
-            </div>
 
             </section>
 
             <!----encontranos_con_bootstrap---->
 
-            <section class="container text-center p-5 p-lg-0">
+            <section class="container-fluid text-center fondo_encontranos pe-5 ps-5">
 
-                <div class="row">
+                <div class="p-5 row">
 
-                    <button class="btn btn-primary col-lg-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseencontranos" aria-expanded="false" aria-controls="collapseencontranos">Encontranos</button>
+                    <div class="col-md-6 col-sm-12 col-12">
 
-                <div class="collapse col-lg-8 mt-5" id="collapseencontranos">
+                        <div class="contenedor_icono_servicios mb-4">
 
-                <div>
+                            <img class="icono" src="imagenes/mapa.png">
 
-                    <h3>Nuestra Ubicación</h3>
+                        </div>
 
-                        <p>Villa Luro, CABA, Argentina y Flores, CABA, Argentina</p>
+                        <h5 class="serif">Nuestra Ubicación</h5>
+
+                            <p class="sanserif">Villa Luro, CABA, Argentina y <br> Flores, CABA, Argentina</p>
+
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-12">
+
+                        <div class="contenedor_icono_servicios mb-4">
+
+                            <img class="icono" src="imagenes/telefono.png">
+
+                        </div>
+
+                        <h5 class="serif">Números de Contacto</h5>
+
+                            <p class="sanserif">15-2406-3261 <br> 11-2400-2703</p>
+
+                    </div>        
 
                 </div>
-
-                <div>
-
-                    <h3>Números de Contacto</h3>
-
-                        <p>15-2406-3261</p>
-                        <p>11-2400-2703</p>
-
-                </div>        
-
-            </div>  
-
-            </div>
 
             </section>
 
         </main>
 
-        <!----footer---->
+            <!----footer---->
 
-        <footer class="container-fluid mt-5">
+        <footer class="container-fluid p-4">
 
-            <div class="row">
+            <div class="columna_footer">
 
-            <div class="col-lg-4 col-sm-12 col-12">
+                <div class="contenedor_logo_footer">
 
-                <h2 class="footer_titulo">Lorem ipsum</h2>
-                <p class="footer_texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas hic ducimus aliquam nobis vero repellat corrupti ipsa molestiae, quaerat eaque assumenda a fugit corporis, minima recusandae excepturi, voluptates neque? Vitae?</p>
+                    <img class="logo_footer" src="imagenes/logo_para_footer.png">
+            
+                </div>
+
+                <div>
+
+                    <nav>   
+
+                        <ul class="nav sanserif text-white">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/presupuesto.html">Presupuesto</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/nuestro_equipo.html">Nuestro Equipo</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/servicios.html">Servicios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+                <div class="separador"></div>
+
+                <div class="contenedor_logo_footer mt-3">
+
+                    <img class="instagram" src="imagenes/instagram-02.png">
+
+
+                </div>
 
             </div>
-
-            <div class="col-lg-4 col-sm-12 col-12">
-
-                <h2 class="footer_titulo">Lorem ipsum</h2>
-                <p class="footer_texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas hic ducimus aliquam nobis vero repellat corrupti ipsa molestiae, quaerat eaque assumenda a fugit corporis, minima recusandae excepturi, voluptates neque? Vitae?</p>
-
-            </div>
-
-            <div class="col-lg-4 col-sm-12 col-12">
-
-                <h2 class="footer_titulo">Lorem ipsum</h2>
-                <p class="footer_texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas hic ducimus aliquam nobis vero repellat corrupti ipsa molestiae, quaerat eaque assumenda a fugit corporis, minima recusandae excepturi, voluptates neque? Vitae?</p>
-
-            </div>
-
-        </div>
 
         </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
 
     </body>
 </html>

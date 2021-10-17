@@ -6,82 +6,257 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>servicios</title>
         
+        <!----bootstrap---->
+
+        <link rel="stylesheet" href="../librerias/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../librerias/bootstrap/bootstrap-theme.min.cs">
+
         <!-----css----->
 
         <link rel="stylesheet" href="../css/style.css">
-        
+                
         <!-----fuentes----->
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-        <!----bootstrap---->
+        <!-----favicon----->
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-    
+        <link rel="icon" href="../imagenes/favicon.ico" type="image/x-icon">
+
 
     </head>
     <body>
-
+        
         <!----header---->
 
         <header>
 
-            <!----logotipo---->
+            <nav class="contnavbar navbar-expand-sm flex-md-row"> 
 
-            <div class="logotipo_header">
-                <a href="../index.html"><img class="logo" src="../imagenes/logo_para_web-02.png"></a>
-            </div>
+                <div class="container-fluid text-lg-center">
 
-            <!----links_de_navegacion_con_bootstrap---->
+                    <!----logotipo---->
 
-            <nav>   
+                        <a class="navbar-brand" href="../index.html"><img class="logo" src="../imagenes/logo_para_web-02.png"></a>
 
-                <ul class="nav justify-content-center">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="nuestro_equipo.html">Nuestro Equipo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                </ul>
+                    <!----links_de_navegacion_con_bootstrap---->
+
+                            <button class="navbar-toggler btn btn-primary float-end" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse justify-content-lg-center" id="collapsibleNavbar">
+
+                                <ul class="nav serif">
+
+                                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="nuestro_equipo.html">Nuestro Equipo</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+
+                                </ul>
+
+                            </div>
+
+                </div>
 
             </nav>
 
         </header>
 
-        <!----footer---->
+<!-----primera_seccion----->
 
-        <footer class="container-fluid mt-5">
+        <section class="container p-5 my-5 border">
 
             <div class="row">
 
-            <div class="col-lg-4 col-sm-12 col-12">
+            <div id="carouselExampleControls" class="carousel slide col-lg-6" data-bs-ride="carousel">
+                <div class="carousel-inner carrusel">
+                    <div class="carousel-item active">
+                    <img src="../imagenes/carrusel1.jpeg" class="d-block ">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../imagenes/carrusel2.png" class="d-block ">
+                    </div>
+                    <div class="carousel-item ">
+                    <img src="../imagenes/carrusel3.png" class="d-block ">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
 
-                <h2 class="footer_titulo">Lorem ipsum</h2>
-                <p class="footer_texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas hic ducimus aliquam nobis vero repellat corrupti ipsa molestiae, quaerat eaque assumenda a fugit corporis, minima recusandae excepturi, voluptates neque? Vitae?</p>
+                <div class="col-lg-6 text-center text-lg-start mt-5 mt-lg-0">
+
+                <h2 class="serif">Altas y Liquidación de Impuestos</h2>
+
+                    <hl class="sanserif">
+                        <li>Ingresos Brutos (Local y Convenio Multilateral).</li>
+                        <li>Régimen General (IVA).</li>
+                        <li>Régimen Simplificado (Monotributo).</li>
+                        <li>Ganancias y Bienes Personales (personas físicas y jurídicas).</li>
+                        <li>Regímenes de Información.</li>
+                        <li>Abonos mensuales (actualización, revisión y seguimiento fiscal).</li>
+                        <li>Regímenes de Recaudación</li>
+                    </hl>
+
+                </div>
 
             </div>
 
-            <div class="col-lg-4 col-sm-12 col-12">
+        </section>
 
-                <h2 class="footer_titulo">Lorem ipsum</h2>
-                <p class="footer_texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas hic ducimus aliquam nobis vero repellat corrupti ipsa molestiae, quaerat eaque assumenda a fugit corporis, minima recusandae excepturi, voluptates neque? Vitae?</p>
+<!-----segunda_seccion----->
+
+        <section class="container p-5 my-5 border">
+
+            <div class="row">
+
+            <div id="carouselExampleControls" class="carousel slide col-lg-6" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="../imagenes/carrusel1.jpeg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../imagenes/carrusel2.png" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item ">
+                    <img src="../imagenes/carrusel3.png" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+
+                <div class="col-lg-6 text-center text-lg-start mt-5 mt-lg-0">
+
+                <h2 class="serif">Asesoramiento Financiero</h2>
+
+                    <hl class="sanserif">
+                        <li>Cómo empezar tu negocio.</li>
+                        <li>Qué tener en cuenta para inscribirse impositivamente.</li>
+                        <li>Cuáles son los mejores precios de venta.</li>
+                        <li>Planificación de los costos.</li>
+                        <li>Asesorías personalizadas.</li>
+                    </hl>
+
+                </div>
 
             </div>
 
-            <div class="col-lg-4 col-sm-12 col-12">
+        </section>
 
-                <h2 class="footer_titulo">Lorem ipsum</h2>
-                <p class="footer_texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas hic ducimus aliquam nobis vero repellat corrupti ipsa molestiae, quaerat eaque assumenda a fugit corporis, minima recusandae excepturi, voluptates neque? Vitae?</p>
+<!-----tercera_seccion----->
+
+        <section class="container p-5 my-5 border">
+
+            <div class="row">
+
+            <div id="carouselExampleControls" class="carousel slide col-lg-6" data-bs-ride="carousel">
+                <div class="carousel-inner carrusel">
+                    <div class="carousel-item active">
+                    <img src="../imagenes/carrusel1.jpeg" class="d-block carrusel2">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../imagenes/carrusel2.png" class="d-block carrusel3">
+                    </div>
+                    <div class="carousel-item ">
+                    <img src="../imagenes/carrusel3.png" class="d-block carrusel2">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+
+                <div class="col-lg-6 text-center text-lg-start mt-5 mt-lg-0">
+
+                <h2 class="serif">Trámites Varios</h2>
+
+                    <hl class="sanserif">
+                        <li>Alta y baja de regímenes e impuestos.</li>
+                        <li>Ecommerce</li>
+                        <li>Servicios de facturación e instructivos.</li>
+                        <li>Trámites en AFIP y Rentas.</li>
+                        <li>Regularizar la situación fiscal.</li>
+                        <li>Personal de casas particulares.</li>
+                        <li>Siradig</li>
+                        <li>Recategorización.</li>
+                        <li>Autónomos.</li>
+                        <li>Revisión de alícuotas.</li>
+                        <li>Recálculo de coeficientes.</li>
+                        <li>Asesoramiento previsional.</li>
+                        <li>Asistencia en inspecciones y requerimientos.</li>
+                    </hl>
+
+                </div>
 
             </div>
 
-        </div>
+        </section>
+
+        <!----footer---->
+
+        <footer class="container-fluid p-4">
+
+            <div class="columna_footer">
+
+                <div class="contenedor_logo_footer">
+
+                    <img class="logo_footer" src="../imagenes/logo_para_footer.png">
+            
+                </div>
+
+            <div>
+
+                <nav>   
+
+                    <ul class="nav sanserif text-white">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nuestro_equipo.html">Nuestro Equipo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+    
+                </nav>
+
+            </div>
+
+                <div class="separador"></div>
+
+                    <div class="contenedor_logo_footer mt-3">
+
+                    <img class="instagram" src="../imagenes/instagram-02.png">
+
+
+                    </div>
+
+            </div>
 
         </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+        <script src="..//bootstrap.min.js"></script>
 
     </body>
 </html>

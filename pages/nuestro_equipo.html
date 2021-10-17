@@ -6,6 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>equipo</title>
         
+        <!----bootstrap---->
+
+        <link rel="stylesheet" href="../librerias/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../librerias/bootstrap/bootstrap-theme.min.cs">
+
         <!-----css----->
 
         <link rel="stylesheet" href="../css/style.css">
@@ -16,10 +21,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-        <!----bootstrap---->
+        <!-----favicon----->
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-    
+        <link rel="icon" href="../imagenes/favicon.ico" type="image/x-icon">
+
 
     </head>
     <body>
@@ -28,23 +33,35 @@
 
         <header>
 
-            <!----logotipo---->
+            <nav class="contnavbar navbar-expand-sm flex-md-row"> 
 
-            <div class="logotipo_header">
-                <a href="../index.html"><img class="logo" src="../imagenes/logo_para_web-02.png"></a>
-            </div>
+                <div class="container-fluid text-lg-center">
 
-            <!----links_de_navegacion_con_bootstrap---->
+                    <!----logotipo---->
 
-            <nav>   
+                        <a class="navbar-brand" href="../index.html"><img class="logo" src="../imagenes/logo_para_web-02.png"></a>
 
-                <ul class="nav justify-content-center">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="nuestro_equipo.html">Nuestro Equipo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                </ul>
+                    <!----links_de_navegacion_con_bootstrap---->
+
+                            <button class="navbar-toggler btn btn-primary float-end" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse justify-content-lg-center" id="collapsibleNavbar">
+
+                                <ul class="nav serif">
+
+                                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="nuestro_equipo.html">Nuestro Equipo</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+
+                                </ul>
+
+                            </div>
+
+                </div>
 
             </nav>
 
@@ -60,9 +77,9 @@
 
                 <div class="col-12">
 
-                <h1>Camila Gallego</h1>
+                <h1 class="serif">Camila Gallego</h1>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum magni similique eaque sit beatae aut natus saepe, id deserunt officia aliquam cumque repellat accusamus nesciunt fugit sint, odit architecto? Vitae.</p>
+                <p class="sanserif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum magni similique eaque sit beatae aut natus saepe, id deserunt officia aliquam cumque repellat accusamus nesciunt fugit sint, odit architecto? Vitae.</p>
 
                 </div>
 
@@ -74,9 +91,9 @@
 
                 <div class="col-12">
 
-                <h1>Yanina Bruschi</h1>
+                <h1 class="serif">Yanina Bruschi</h1>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum magni similique eaque sit beatae aut natus saepe, id deserunt officia aliquam cumque repellat accusamus nesciunt fugit sint, odit architecto? Vitae.</p>
+                <p class="sanserif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum magni similique eaque sit beatae aut natus saepe, id deserunt officia aliquam cumque repellat accusamus nesciunt fugit sint, odit architecto? Vitae.</p>
 
                 </div>
 
@@ -88,9 +105,9 @@
 
                 <div class="col-12">
 
-                <h1>Romina Goldwaser</h1>
+                <h1 class="serif">Romina Goldwaser</h1>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum magni similique eaque sit beatae aut natus saepe, id deserunt officia aliquam cumque repellat accusamus nesciunt fugit sint, odit architecto? Vitae.</p>
+                <p class="sanserif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum magni similique eaque sit beatae aut natus saepe, id deserunt officia aliquam cumque repellat accusamus nesciunt fugit sint, odit architecto? Vitae.</p>
             
                 </div>
 
@@ -100,32 +117,42 @@
 
         <!----footer---->
 
-        <footer class="container-fluid mt-5">
+        <footer class="container-fluid p-4">
 
-            <div class="row">
+            <div class="columna_footer">
 
-            <div class="col-lg-4 col-sm-12 col-12">
+                <div class="contenedor_logo_footer">
 
-                <h2 class="footer_titulo">Lorem ipsum</h2>
-                <p class="footer_texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas hic ducimus aliquam nobis vero repellat corrupti ipsa molestiae, quaerat eaque assumenda a fugit corporis, minima recusandae excepturi, voluptates neque? Vitae?</p>
+                    <img class="logo_footer" src="../imagenes/logo_para_footer.png">
+            
+                </div>
+
+            <div>
+
+                <nav>   
+
+                    <ul class="nav sanserif text-white">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nuestro_equipo.html">Nuestro Equipo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+    
+                </nav>
 
             </div>
 
-            <div class="col-lg-4 col-sm-12 col-12">
+                <div class="separador"></div>
 
-                <h2 class="footer_titulo">Lorem ipsum</h2>
-                <p class="footer_texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas hic ducimus aliquam nobis vero repellat corrupti ipsa molestiae, quaerat eaque assumenda a fugit corporis, minima recusandae excepturi, voluptates neque? Vitae?</p>
+                    <div class="contenedor_logo_footer mt-3">
 
-            </div>
+                    <img class="instagram" src="../imagenes/instagram-02.png">
 
-            <div class="col-lg-4 col-sm-12 col-12">
 
-                <h2 class="footer_titulo">Lorem ipsum</h2>
-                <p class="footer_texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas hic ducimus aliquam nobis vero repellat corrupti ipsa molestiae, quaerat eaque assumenda a fugit corporis, minima recusandae excepturi, voluptates neque? Vitae?</p>
+                    </div>
 
             </div>
-
-        </div>
 
         </footer>
 
