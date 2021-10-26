@@ -1,0 +1,198 @@
+@import "generalidades";
+
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; }
+
+
+/*estructura_de_la_pagina*/
+
+body{
+  color: #3c4858;
+}
+
+/*tipografias*/
+
+.serif{
+  font-family: $fuente-serif;
+}
+
+.sanserif{
+  font-family: $fuente-sanserif;
+}
+
+.rosa{
+    color: $color-rosa;
+}
+
+.verde{
+  color: $color-verde;
+}
+
+/*--------------------inicio--------------------*/
+/*---------------header---------------*/
+
+header {
+  background-image: url(../imagenes/header-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  }
+  
+.navbar>.container-fluid{
+  display: initial;
+}
+
+.logo {
+  width: 180px;
+  margin: 25px 0; 
+  }
+
+.mostrar{
+  display:none;
+}
+
+.icono {
+  width: 50px; }
+  
+/*---------------quienes_somos---------------*/
+
+.imagen_quienes_somos {
+  background-image: 
+  linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../imagenes/calculadora.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;}
+
+/*---------------organicemos_un_café---------------*/
+
+.imagen_organicemos_un_cafe {
+  background-image: 
+  linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../imagenes/cafe_virtual.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;}
+
+/*---------------Contacto---------------*/
+
+.fondo_encontranos{
+  background-image: url("../imagenes/contacto_fondo-02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*---------------footer---------------*/
+
+footer {
+  background-color: #323437;
+}
+
+
+.logo_footer{
+  width: 50px;
+}
+
+.separador{
+  height: 1px;
+  background-color: rgb(122, 122, 122);
+}
+
+.instagram{
+  width: 20px;
+}
+
+/*--------------------servicios--------------------*/
+
+.texto_servicios{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*--------------------equipo--------------------*/
+
+.caras{
+  width: 180px;
+}
+
+  /*-----responsive-----*/
+
+  @media screen and (max-width: 1024px) {
+
+    .logo{
+      width: 180px;
+    }
+
+    .fondo_encontranos{
+  background-image: url("../imagenes/contacto-768-02.svg");
+  background-repeat: no-repeat;
+  background-size: cover;}
+
+      }
+
+  @media screen and (max-width: 768px) {
+    
+    header {
+      background-image: url(../imagenes/header-768-04.svg);
+      background-repeat: no-repeat;
+      background-size: cover; 
+      }
+
+      .mostrar{
+        display:initial;
+      }
+
+      .logo{
+        width: 90px;
+      }
+
+      .navbar-expand-md .navbar-collapse {
+        display: none;
+        flex-basis: auto;
+    }
+
+      .fondo_encontranos{
+        background-image: url("../imagenes/contacto-02.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .navbar>.container-fluid{
+        display: flex;
+      }
+
+  }
+
+  @media screen and (max-width: 576px) {
+    
+    header {
+      background-image: url(../imagenes/header-03.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; 
+      }
+
+      .mostrar{
+        display:initial;
+      }
+
+      .logo{
+        width: 60px;
+      }
+
+      .fondo_encontranos{
+        background-image: url("../imagenes/contacto-03.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+  }

@@ -33,23 +33,29 @@
 
         <header>
 
-            <nav class="contnavbar navbar-expand-sm flex-md-row"> 
+            <nav class="contnavar navbar navbar-expand-lg navbar-expand-md navegacion flex-md-row navbar-dark p-0"> 
 
-                <div class="container-fluid text-lg-center">
+                <div class="container-fluid text-lg-center text-md-center">
 
                     <!----logotipo---->
 
-                        <a class="navbar-brand" href="../index.html"><img class="logo" src="../imagenes/logo_para_web-02.png"></a>
+                        <a class="navbar-brand ms-4 ms-sm-4" href="../index.html"><img class="logo" src="../imagenes/logo_para_web-02.png"></a>
 
                     <!----links_de_navegacion_con_bootstrap---->
 
-                            <button class="navbar-toggler btn btn-primary float-end" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+                            <div class="mostrar">
 
-                            <div class="collapse navbar-collapse justify-content-lg-center" id="collapsibleNavbar">
+                                <button class="navbar-expand-sm btn btn-primary me-sm-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                                    
+                                    <span class="navbar-toggler-icon"></span>
 
-                                <ul class="nav serif">
+                                </button>
+
+                            </div>
+
+                            <div class="collapse navbar-collapse justify-content-lg-center justify-content-md-center" id="collapsibleNavbar">
+
+                                <ul class="navbar-nav serif mb-4 mb-lg-2 ms-4 ms-lg-0">
 
                                     <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                                     <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
@@ -71,44 +77,99 @@
 
         <main>
 
+            <section class="container mt-5">
+
+                <div class="row justify-content-center">
+    
+                    <div class="col-10 col-md-9 col-lg-6 sanserif text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloremque officia optio delectus minus, maiores, aliquid quas quia facilis minima fugiat dolorum dolorem iusto a! Fuga sit nihil consectetur iusto.</p>
+                    </div>
+    
+                </div>
+    
+            </section>
+
             <!----primer_miembro---->
 
-            <section class="container p-5">
+            <section class="container mb-5">
 
-                <div class="col-12">
+                <div class="row text-center mt-5 pe-5 ps-5 p-lg-0">
 
-                <h1 class="serif">Camila Gallego</h1>
+                    <div class="col-md-4 col-sm-6">
 
-                <p class="sanserif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum magni similique eaque sit beatae aut natus saepe, id deserunt officia aliquam cumque repellat accusamus nesciunt fugit sint, odit architecto? Vitae.</p>
+                        <div class="mb-4">
 
-                </div>
+                            <img class="caras" src="../imagenes/romina.png" alt="">
 
-            </section>
+                        </div>
 
-            <!----segundo_miembro---->
+                        <div class="mt-3">
 
-            <section class="container p-5">
+                            <h5 class="serif">Romina Glodwaser</h5>
 
-                <div class="col-12">
+                                <p class="sanserif">Si tengo que elegir, siempre me gustó más la parte impositiva. También me parece super interesante la relación que hay con el mundo del derecho (todo está conectado!). Me alegra un montón poder asesorar a muchos emprendedores y sobre todo que confíen en nosotras.</p>
 
-                <h1 class="serif">Yanina Bruschi</h1>
+                        </div>
 
-                <p class="sanserif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum magni similique eaque sit beatae aut natus saepe, id deserunt officia aliquam cumque repellat accusamus nesciunt fugit sint, odit architecto? Vitae.</p>
+                        <div class="row justify-content-center">
 
-                </div>
+                            <img src="../imagenes/instagram-02.png" alt="" class="icono">
 
-            </section>
+                        </div>
 
-            <!----tercer_miembro---->
+                    </div>
 
-            <section class="container p-5">
+                    <!----segundo_miembro---->
+                    
+                    <div class="col-md-4 col-sm-6">
 
-                <div class="col-12">
+                        <div class="mb-4">
 
-                <h1 class="serif">Romina Goldwaser</h1>
+                            <img class="caras" src="../imagenes/camila.png" alt="">
 
-                <p class="sanserif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum magni similique eaque sit beatae aut natus saepe, id deserunt officia aliquam cumque repellat accusamus nesciunt fugit sint, odit architecto? Vitae.</p>
-            
+                        </div>
+
+                        <div class="mt-3">
+
+                            <h5 class="serif">Camila Gallego</h5>
+
+                                <p class="sanserif">Aunque se asocie nuestra formación con la contabilidad per se, me enfoqué en el sector impositivo. Disfruto las charlas con clientes en total confianza (y un café de por medio)</p>
+
+                        </div>
+
+                        <div class="row justify-content-center">
+
+                            <img src="../imagenes/instagram-02.png" alt="" class="icono">
+
+                        </div>
+
+                    </div>
+
+                    <!----tercer_miembro---->
+                    
+                    <div class="col-md-4 col-sm-6">
+
+                        <div class="mb-4">
+
+                            <img class="caras" src="../imagenes/yani.png" alt="">
+
+                        </div>
+
+                        <div class="mt-3">
+
+                            <h5 class="serif">Yanina Bruschi</h5>
+
+                                <p class="sanserif">Una comunicación humana y amable, basada en la confianza y focalizada en sus necesidades.</p>
+
+                        </div>
+
+                        <div class="row justify-content-center">
+
+                            <img src="../imagenes/instagram-02.png" alt="" class="icono">
+
+                        </div>
+
+                    </div>
                 </div>
 
             </section>
@@ -119,38 +180,43 @@
 
         <footer class="container-fluid p-4">
 
-            <div class="columna_footer">
+            <div class="flex row text-center justify-content-center">
 
-                <div class="contenedor_logo_footer">
+                <div class="col-12 col-md-7 col-lg-6">
 
-                    <img class="logo_footer" src="../imagenes/logo_para_footer.png">
-            
-                </div>
+                    <div class="contenedor_logo_footer">
 
-            <div>
+                        <img class="logo_footer" src="../imagenes/logo_para_footer.png">
+                
+                    </div>
 
-                <nav>   
 
-                    <ul class="nav sanserif text-white">
-                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
-                        <li class="nav-item"><a class="nav-link" href="nuestro_equipo.html">Nuestro Equipo</a></li>
-                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                    </ul>
-    
-                </nav>
+                        <nav class="navbar-nav flex"> 
+                            
+                            <div class="row text-center justify-content-center">
 
-            </div>
+                            <ul class="nav sanserif text-white justify-content-around pe-0">
+                                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
+                                <li class="nav-item"><a class="nav-link" href="nuestro_equipo.html">Nuestro Equipo</a></li>
+                                <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                            </ul>
 
-                <div class="separador"></div>
+                        </div>
+
+                        </nav>
+
+                    <div class="separador justify-content-center"></div>
 
                     <div class="contenedor_logo_footer mt-3">
 
-                    <img class="instagram" src="../imagenes/instagram-02.png">
+                        <img class="instagram" src="../imagenes/instagram-02.png">
 
 
                     </div>
+
+                </div>
 
             </div>
 

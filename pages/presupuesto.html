@@ -33,23 +33,29 @@
 
         <header>
 
-            <nav class="contnavbar navbar-expand-sm flex-md-row"> 
+            <nav class="contnavar navbar navbar-expand-lg navbar-expand-md navegacion flex-md-row navbar-dark p-0"> 
 
-                <div class="container-fluid text-lg-center">
+                <div class="container-fluid text-lg-center text-md-center">
 
                     <!----logotipo---->
 
-                        <a class="navbar-brand" href="../index.html"><img class="logo" src="../imagenes/logo_para_web-02.png"></a>
+                        <a class="navbar-brand ms-4 ms-sm-4" href="../index.html"><img class="logo" src="../imagenes/logo_para_web-02.png"></a>
 
                     <!----links_de_navegacion_con_bootstrap---->
 
-                            <button class="navbar-toggler btn btn-primary float-end" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+                            <div class="mostrar">
 
-                            <div class="collapse navbar-collapse justify-content-lg-center" id="collapsibleNavbar">
+                                <button class="navbar-expand-sm btn btn-primary me-sm-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                                    
+                                    <span class="navbar-toggler-icon"></span>
 
-                                <ul class="nav serif">
+                                </button>
+
+                            </div>
+
+                            <div class="collapse navbar-collapse justify-content-lg-center justify-content-md-center" id="collapsibleNavbar">
+
+                                <ul class="navbar-nav serif mb-4 mb-lg-2 ms-4 ms-lg-0">
 
                                     <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                                     <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
@@ -67,10 +73,14 @@
 
         </header>
 
-        <section class="container_texto_presupuesto">
+        <section class="container mt-5">
 
-            <div class="texto_presupuesto sanserif text-center">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloremque officia optio delectus minus, maiores, aliquid quas quia facilis minima fugiat dolorum dolorem iusto a! Fuga sit nihil consectetur iusto.</p>
+            <div class="row justify-content-center">
+
+                <div class="col-10 col-md-9 col-lg-6 sanserif text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloremque officia optio delectus minus, maiores, aliquid quas quia facilis minima fugiat dolorum dolorem iusto a! Fuga sit nihil consectetur iusto.</p>
+                </div>
+
             </div>
 
         </section>
@@ -252,38 +262,43 @@
 
             <footer class="container-fluid p-4">
 
-                <div class="columna_footer">
+                <div class="flex row text-center justify-content-center">
     
-                    <div class="contenedor_logo_footer">
+                    <div class="col-12 col-md-7 col-lg-6">
     
-                        <img class="logo_footer" src="../imagenes/logo_para_footer.png">
-                
-                    </div>
+                        <div class="contenedor_logo_footer">
     
-                <div>
+                            <img class="logo_footer" src="../imagenes/logo_para_footer.png">
+                    
+                        </div>
     
-                    <nav>   
-
-                        <ul class="nav sanserif text-white">
-                            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
-                            <li class="nav-item"><a class="nav-link" href="nuestro_equipo.html">Nuestro Equipo</a></li>
-                            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                        </ul>
-        
-                    </nav>
     
-                </div>
+                            <nav class="navbar-nav flex"> 
+                                
+                                <div class="row text-center justify-content-center">
     
-                    <div class="separador"></div>
+                                <ul class="nav sanserif text-white justify-content-around pe-0">
+                                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="nuestro_equipo.html">Nuestro Equipo</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                                </ul>
+    
+                            </div>
+    
+                            </nav>
+    
+                        <div class="separador justify-content-center"></div>
     
                         <div class="contenedor_logo_footer mt-3">
     
-                        <img class="instagram" src="../imagenes/instagram-02.png">
+                            <img class="instagram" src="../imagenes/instagram-02.png">
     
     
                         </div>
+    
+                    </div>
     
                 </div>
     

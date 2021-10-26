@@ -33,23 +33,29 @@
 
         <header>
 
-            <nav class="contnavbar navbar-expand-sm flex-md-row"> 
+            <nav class="contnavar navbar navbar-expand-lg navbar-expand-md navegacion flex-md-row navbar-dark p-0"> 
 
-                <div class="container-fluid text-lg-center">
+                <div class="container-fluid text-lg-center text-md-center">
 
                     <!----logotipo---->
 
-                        <a class="navbar-brand" href="../index.html"><img class="logo" src="../imagenes/logo_para_web-02.png"></a>
+                        <a class="navbar-brand ms-4 ms-sm-4" href="../index.html"><img class="logo" src="../imagenes/logo_para_web-02.png"></a>
 
                     <!----links_de_navegacion_con_bootstrap---->
 
-                            <button class="navbar-toggler btn btn-primary float-end" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+                            <div class="mostrar">
 
-                            <div class="collapse navbar-collapse justify-content-lg-center" id="collapsibleNavbar">
+                                <button class="navbar-expand-sm btn btn-primary me-sm-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                                    
+                                    <span class="navbar-toggler-icon"></span>
 
-                                <ul class="nav serif">
+                                </button>
+
+                            </div>
+
+                            <div class="collapse navbar-collapse justify-content-lg-center justify-content-md-center" id="collapsibleNavbar">
+
+                                <ul class="navbar-nav serif mb-4 mb-lg-2 ms-4 ms-lg-0">
 
                                     <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                                     <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
@@ -69,50 +75,52 @@
 
         <!----mapa_de_google---->
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d105048.0677090669!2d-58.50250900000001!3d-34.635704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9b68fab95b5%3A0xbaf48a44b765c9eb!2sVilla%20Luro%2C%20CABA%2C%20Argentina!5e0!3m2!1ses!2sus!4v1631225416291!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe class="mb-5" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d105048.0677090669!2d-58.50250900000001!3d-34.635704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9b68fab95b5%3A0xbaf48a44b765c9eb!2sVilla%20Luro%2C%20CABA%2C%20Argentina!5e0!3m2!1ses!2sus!4v1631225416291!5m2!1ses!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
         <!----contacto---->
 
         <section class="container">
 
+            <div class="row justify-content-center">
+
             <div class="row">
 
                 <!----datos---->
 
-                <div class="col-lg-6 col-12 text-center text-lg-start">
+                <div class="col-lg-6 col-12 text-center text-lg-start mb-5 mb-md-5 mb-lg-0">
 
                     <!----telefono---->
 
-                    <div class="col-lg-4 col-12 email_row">
+                    <div class="col-12">
 
-                        <div class="me-4">
+                            <div class="mb-4 me-lg-4 d-lg-inline float-lg-start">
 
-                            <img class="icono" src="../imagenes/telefono.png">
-    
-                            </div>
-
-                            <div>
-
-                        <h4 class="serif">Teléfono</h4>
-                        
-                            <p class="sanserif">15-2406-3261</p>
-                            <p class="sanserif">11-2400-2703</p>
+                                <img class="icono" src="../imagenes/telefono.png">
         
-                        </div>
+                                </div>
+
+                                <div class="d-lg-inline-block">
+
+                            <h4 class="serif">Teléfono</h4>
+                            
+                                <p class="sanserif">15-2406-3261</p>
+                                <p class="sanserif">11-2400-2703</p>
+            
+                            </div>
 
                     </div>
         
                     <!----direccion---->
 
-                    <div class="col-lg-6 col-12 email_row">
+                    <div class="col-12">
         
-                        <div class="me-4">
+                        <div class="mb-4 me-lg-4 d-lg-inline float-lg-start">
 
                             <img class="icono" src="../imagenes/mapa.png">
     
                             </div>
 
-                            <div>
+                            <div class="d-lg-inline-block">
 
                         <h4 class="serif">Dirección</h4>
                         
@@ -125,15 +133,15 @@
                         
                     <!----email---->
 
-                    <div class="col-lg-6 col-12 email_row">
+                    <div class="col-12">
         
-                        <div class="me-4">
+                        <div class="mb-4 me-lg-4 d-lg-inline float-lg-start">
 
                         <img class="icono" src="../imagenes/email.png">
 
                         </div>
 
-                        <div>
+                        <div class="d-lg-inline-block">
 
                         <h4 class="serif">Email</h4>
         
@@ -143,8 +151,7 @@
 
                         </div>
 
-        
-                </div>
+            </div>
 
                 <!----formulario_de_contacto---->
 
@@ -181,44 +188,51 @@
 
         </div>
 
+    </div>
+
         </section>
 
         <!----footer---->
 
         <footer class="container-fluid p-4">
 
-            <div class="columna_footer">
+            <div class="flex row text-center justify-content-center">
 
-                <div class="contenedor_logo_footer">
+                <div class="col-12 col-md-7 col-lg-6">
 
-                    <img class="logo_footer" src="../imagenes/logo_para_footer.png">
-            
-                </div>
+                    <div class="contenedor_logo_footer">
 
-            <div>
+                        <img class="logo_footer" src="../imagenes/logo_para_footer.png">
+                
+                    </div>
 
-                <nav>   
 
-                    <ul class="nav sanserif text-white">
-                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
-                        <li class="nav-item"><a class="nav-link" href="nuestro_equipo.html">Nuestro Equipo</a></li>
-                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                    </ul>
-    
-                </nav>
+                        <nav class="navbar-nav flex"> 
+                            
+                            <div class="row text-center justify-content-center">
 
-            </div>
+                            <ul class="nav sanserif text-white justify-content-around pe-0">
+                                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
+                                <li class="nav-item"><a class="nav-link" href="nuestro_equipo.html">Nuestro Equipo</a></li>
+                                <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                            </ul>
 
-                <div class="separador"></div>
+                        </div>
+
+                        </nav>
+
+                    <div class="separador justify-content-center"></div>
 
                     <div class="contenedor_logo_footer mt-3">
 
-                    <img class="instagram" src="../imagenes/instagram-02.png">
+                        <img class="instagram" src="../imagenes/instagram-02.png">
 
 
                     </div>
+
+                </div>
 
             </div>
 
