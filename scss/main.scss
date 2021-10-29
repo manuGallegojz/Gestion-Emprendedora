@@ -79,6 +79,17 @@ body{
 .icono {
   width: $tamaño / 5.5;}
 
+.navbar-dark .navbar-nav .nav-link {
+  color: $color-verde;
+}
+
+.nav-link{
+  color: $color-verde;
+  &:hover{
+    color: #63aa9c;
+  }
+}
+
 /*---------------footer---------------*/
 
 footer {
@@ -95,9 +106,22 @@ footer {
 }
 
 .instagram{
-  width: $tamaño / 15;
+  width: $tamaño / 10;
 }
 
+/*--------------------servicios--------------------*/
+
+.btn-primary {
+  color: #fff;
+  background-color: $color-verde;
+  border-color: $color-verde;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #63aa9c;
+  border-color: #63aa9c;
+}
 
 /*--------------------servicios--------------------*/
 
@@ -114,7 +138,7 @@ footer {
 }
 
 .instagram_equipo{
-  width: $tamaño / 6.5;
+  width: $tamaño / 8;
 }
 
   /*-----responsive-----*/

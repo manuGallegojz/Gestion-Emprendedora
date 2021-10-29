@@ -61,6 +61,14 @@ body {
 .icono, .logo_footer {
   width: 54.54545px; }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: #75ccbb; }
+
+.nav-link {
+  color: #75ccbb; }
+  .nav-link:hover {
+    color: #63aa9c; }
+
 /*---------------footer---------------*/
 footer {
   background-color: #323437; }
@@ -70,7 +78,18 @@ footer {
   background-color: #7a7a7a; }
 
 .instagram {
-  width: 20px; }
+  width: 30px; }
+
+/*--------------------servicios--------------------*/
+.btn-primary {
+  color: #fff;
+  background-color: #75ccbb;
+  border-color: #75ccbb; }
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #63aa9c;
+  border-color: #63aa9c; }
 
 /*--------------------servicios--------------------*/
 .texto_servicios {
@@ -83,7 +102,7 @@ footer {
   width: 150px; }
 
 .instagram_equipo {
-  width: 46.15385px; }
+  width: 37.5px; }
 
 /*-----responsive-----*/
 @media screen and (max-width: 1024px) {
