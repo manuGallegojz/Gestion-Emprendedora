@@ -33,21 +33,43 @@ body{
 }
 
 /*--------------------inicio--------------------*/
-/*---------------header---------------*/
 
-header {
-  background-image: url(../imagenes/header-01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; 
+/*---------------imagenes---------------*/
+
+@each $imagen1 in header-imagen, fondo_encontranos{
+
+  .#{$imagen1}{
+    background-image: url(../imagenes/#{$imagen1}.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+
+  }
+
+@each $imagen2 in quienes-somos, cafe-virtual{
+
+  .#{$imagen2}{
+    background-image:
+    linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url(../imagenes/#{$imagen2}.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+
+}
+
+/*---------------header---------------*/
   
 .navbar>.container-fluid{
   display: initial;
 }
 
 .logo {
-  width: 180px;
-  margin: 25px 0; 
+  width: $tamaño / 1.5;
   }
 
 .mostrar{
@@ -55,41 +77,7 @@ header {
 }
 
 .icono {
-  width: 50px; }
-  
-/*---------------quienes_somos---------------*/
-
-.imagen_quienes_somos {
-  background-image: 
-  linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(../imagenes/calculadora.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black;}
-
-/*---------------organicemos_un_café---------------*/
-
-.imagen_organicemos_un_cafe {
-  background-image: 
-  linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(../imagenes/cafe_virtual.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;}
-
-/*---------------Contacto---------------*/
-
-.fondo_encontranos{
-  background-image: url("../imagenes/contacto_fondo-02.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  width: $tamaño / 5.5;}
 
 /*---------------footer---------------*/
 
@@ -97,9 +85,8 @@ footer {
   background-color: #323437;
 }
 
-
 .logo_footer{
-  width: 50px;
+  @extend .icono;
 }
 
 .separador{
@@ -108,8 +95,9 @@ footer {
 }
 
 .instagram{
-  width: 20px;
+  width: $tamaño / 15;
 }
+
 
 /*--------------------servicios--------------------*/
 
@@ -122,7 +110,11 @@ footer {
 /*--------------------equipo--------------------*/
 
 .caras{
-  width: 180px;
+  width: $tamaño / 2;
+}
+
+.instagram_equipo{
+  width: $tamaño / 6.5;
 }
 
   /*-----responsive-----*/
@@ -130,22 +122,23 @@ footer {
   @media screen and (max-width: 1024px) {
 
     .logo{
-      width: 180px;
+      width: $tamaño / 1.5;
     }
 
     .fondo_encontranos{
-  background-image: url("../imagenes/contacto-768-02.svg");
-  background-repeat: no-repeat;
-  background-size: cover;}
+      background-image: url(../imagenes/contacto-768-02.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
 
       }
 
   @media screen and (max-width: 768px) {
     
-    header {
+    .header-imagen {
       background-image: url(../imagenes/header-768-04.svg);
       background-repeat: no-repeat;
-      background-size: cover; 
+      background-size: cover;
       }
 
       .mostrar{
@@ -153,14 +146,14 @@ footer {
       }
 
       .logo{
-        width: 90px;
+        width: $tamaño / 3;
       }
 
       .fondo_encontranos{
-        background-image: url("../imagenes/contacto-02.svg");
+        background-image: url(../imagenes/contacto-02.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-      }
+}
 
       .navbar>.container-fluid{
         display: flex;
@@ -170,10 +163,10 @@ footer {
 
   @media screen and (max-width: 576px) {
     
-    header {
+    .header-imagen {
       background-image: url(../imagenes/header-03.jpg);
       background-repeat: no-repeat;
-      background-size: cover; 
+      background-size: cover;
       }
 
       .mostrar{
@@ -181,7 +174,7 @@ footer {
       }
 
       .logo{
-        width: 60px;
+        width: $tamaño / 5;
       }
 
       .fondo_encontranos{

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /*variables*/
+/*fuentes*/
+/*tamaños*/
 * {
   padding: 0;
   margin: 0;
@@ -23,51 +25,45 @@ body {
   color: #75ccbb; }
 
 /*--------------------inicio--------------------*/
-/*---------------header---------------*/
-header {
-  background-image: url(../imagenes/header-01.jpg);
+/*---------------imagenes---------------*/
+.header-imagen {
+  background-image: url(../imagenes/header-imagen.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
+.fondo_encontranos {
+  background-image: url(../imagenes/fondo_encontranos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.quienes-somos {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/quienes-somos.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black; }
+
+.cafe-virtual {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/cafe-virtual.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black; }
+
+/*---------------header---------------*/
 .navbar > .container-fluid {
   display: initial; }
 
 .logo {
-  width: 180px;
-  margin: 25px 0; }
+  width: 200px; }
 
 .mostrar {
   display: none; }
 
-.icono {
-  width: 50px; }
-
-/*---------------quienes_somos---------------*/
-.imagen_quienes_somos {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/calculadora.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black; }
-
-/*---------------organicemos_un_café---------------*/
-.imagen_organicemos_un_cafe {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/cafe_virtual.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black; }
-
-/*---------------Contacto---------------*/
-.fondo_encontranos {
-  background-image: url("../imagenes/contacto_fondo-02.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
+.icono, .logo_footer {
+  width: 54.54545px; }
 
 /*---------------footer---------------*/
 footer {
   background-color: #323437; }
-
-.logo_footer {
-  width: 50px; }
 
 .separador {
   height: 1px;
@@ -84,35 +80,38 @@ footer {
 
 /*--------------------equipo--------------------*/
 .caras {
-  width: 180px; }
+  width: 150px; }
+
+.instagram_equipo {
+  width: 46.15385px; }
 
 /*-----responsive-----*/
 @media screen and (max-width: 1024px) {
   .logo {
-    width: 180px; }
+    width: 200px; }
   .fondo_encontranos {
-    background-image: url("../imagenes/contacto-768-02.svg");
+    background-image: url(../imagenes/contacto-768-02.svg);
     background-repeat: no-repeat;
     background-size: cover; } }
 
 @media screen and (max-width: 768px) {
-  header {
+  .header-imagen {
     background-image: url(../imagenes/header-768-04.svg);
     background-repeat: no-repeat;
     background-size: cover; }
   .mostrar {
     display: initial; }
   .logo {
-    width: 90px; }
+    width: 100px; }
   .fondo_encontranos {
-    background-image: url("../imagenes/contacto-02.svg");
+    background-image: url(../imagenes/contacto-02.jpg);
     background-repeat: no-repeat;
     background-size: cover; }
   .navbar > .container-fluid {
     display: flex; } }
 
 @media screen and (max-width: 576px) {
-  header {
+  .header-imagen {
     background-image: url(../imagenes/header-03.jpg);
     background-repeat: no-repeat;
     background-size: cover; }
