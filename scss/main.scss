@@ -62,7 +62,25 @@ body{
 
 }
 
+.opacidad:hover {
+  opacity: 0.7;
+  transition: opacity 150ms ease-in 20ms;
+  // transition: opacity  200ms ease-in;
+  // transition-delay: 20ms;
+}
+
+.opacidad:not(:hover) {
+  opacity: 1;
+  transition: opacity 150ms ease-in 20ms;
+  // transition: opacity  200ms ease-in;
+  // transition-delay: 20ms;
+}
+
 /*---------------header---------------*/
+
+  .mostrar_logo{
+  display: initial;
+}
   
 .navbar>.container-fluid{
   display: initial;
@@ -71,6 +89,10 @@ body{
 .logo {
   width: $tamaño / 1.5;
   }
+
+  .logo_02{
+  width: 150px;
+  } 
 
 .mostrar{
   display:none;
@@ -158,6 +180,10 @@ footer {
       }
 
   @media screen and (max-width: 768px) {
+
+    .mostrar_logo{
+      display: none;
+    }
     
     .header-imagen {
       background-image: url(../imagenes/header-768-04.svg);
@@ -186,6 +212,23 @@ footer {
   }
 
   @media screen and (max-width: 576px) {
+
+    @each $imagen2 in quienes-somos, cafe-virtual{
+
+      .#{$imagen2}{
+        background-image:
+        linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../imagenes/#{$imagen2}.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: black;
+      background-position: center;
+    }
+    
+    }
     
     .header-imagen {
       background-image: url(../imagenes/header-03.jpg);

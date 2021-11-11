@@ -48,12 +48,26 @@ body {
   background-size: cover;
   background-color: black; }
 
+.opacidad:hover {
+  opacity: 0.7;
+  transition: opacity 150ms ease-in 20ms; }
+
+.opacidad:not(:hover) {
+  opacity: 1;
+  transition: opacity 150ms ease-in 20ms; }
+
 /*---------------header---------------*/
+.mostrar_logo {
+  display: initial; }
+
 .navbar > .container-fluid {
   display: initial; }
 
 .logo {
   width: 200px; }
+
+.logo_02 {
+  width: 150px; }
 
 .mostrar {
   display: none; }
@@ -114,6 +128,8 @@ footer {
     background-size: cover; } }
 
 @media screen and (max-width: 768px) {
+  .mostrar_logo {
+    display: none; }
   .header-imagen {
     background-image: url(../imagenes/header-768-04.svg);
     background-repeat: no-repeat;
@@ -130,6 +146,18 @@ footer {
     display: flex; } }
 
 @media screen and (max-width: 576px) {
+  .quienes-somos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/quienes-somos.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-position: center; }
+  .cafe-virtual {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/cafe-virtual.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-position: center; }
   .header-imagen {
     background-image: url(../imagenes/header-03.jpg);
     background-repeat: no-repeat;
